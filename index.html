@@ -56,8 +56,8 @@ color:midnightblue;
     <body>
         <div class="navi">
             <div class="buttoncontainer"> 
-<button onclick="zeigeMeldung()">Home</button>
-<button>Bestellen</button>
+<button onclick="showHome()">Home</button>
+<button onclick="showBestellen()">Bestellen</button>
 <button>Rezensionen</button>
             </div>
         </div>
@@ -93,8 +93,12 @@ color:midnightblue;
             confirm("Bitte gib eine gute Bewertung😘")
         </script>
         <script>
-            function zeigeMeldung()  {
+            function showHome()  {
           alert ("Willkommen auf der Seite des Multihahns!");
+            }
+            function showBestellen()    {
+                var HomeSection = document.querySelector(".home");
+                HomeSection.style.display = "none";
             }
         </script>
      </body>
