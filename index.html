@@ -58,7 +58,7 @@ color:midnightblue;
             <div class="buttoncontainer"> 
 <button onclick="showHome()">Home</button>
 <button onclick="showBestellen()">Bestellen</button>
-<button>Rezensionen</button>
+<button onclick="showRezensionen()">Rezensionen</button>
             </div>
         </div>
         <div class="content">
@@ -94,14 +94,29 @@ color:midnightblue;
         </script>
         <script>
             function showHome()  {
-          alert ("Willkommen auf der Seite des Multihahns!");
-            }
+                var HomeSection = document.querySelector(".home");
+         HomeSection.style.display = "flex";
+         var BestellenSection = document.querySelector(".bestellen");
+         BestellenSection.style.display = "none";
+         var RezensionenSection = document.querySelector(".bestellen");
+         RezensionenSection.style.display = "none";
+           }
             function showBestellen()    {
          var HomeSection = document.querySelector(".home");
          HomeSection.style.display = "none";
          var BestellenSection = document.querySelector(".bestellen");
          BestellenSection.style.display = "flex";
+         var RezensionenSection = document.querySelector(".bestellen");
+         RezensionenSection.style.display = "none";
             }
+            function showRezensionen() {
+                var HomeSection = document.querySelector(".home");
+         HomeSection.style.display = "none";
+         var BestellenSection = document.querySelector(".bestellen");
+         BestellenSection.style.display = "none";
+         var RezensionenSection = document.querySelector(".bestellen");
+         RezensionenSection.style.display = "flex";
+                }
         </script>
      </body>
 </html>
