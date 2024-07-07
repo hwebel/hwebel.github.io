@@ -71,8 +71,8 @@
 <body>
     <div class="navi">
         <div class="buttoncontainer">
-            <button onclick="zeigeMeldung()"=>Home</button>
-            <button onclick=>Rezensionen</button>
+            <button onclick="showHome()">Home</button>
+            <button onclick="showRezensionen()">Rezensionen</button>
             <button onclick=>Bestellen</button>
         </div>
     </div>
@@ -105,8 +105,13 @@ Hier kannst du dir unsere Top-Rezensionen ansehen!
             confirm("Bitte gib eine gute Bewertung😘")
         </script>
         <script>
-            function zeigeMeldung() {
-                alert("Herlich wilkommen beim Multihahn!");
+            function showHome() {
+                
+            }
+
+            function showRezensionen() {
+                var HomeSection = document.querySelector(".home");
+                HomeSection.style.display = "none";
             }
         </script>
 </body>
