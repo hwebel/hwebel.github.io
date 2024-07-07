@@ -73,7 +73,7 @@
         <div class="buttoncontainer">
             <button onclick="showHome()">Home</button>
             <button onclick="showRezensionen()">Rezensionen</button>
-            <button onclick=>Bestellen</button>
+            <button onclick="showBestellen()">Bestellen</button>
         </div>
     </div>
     <div class="content">
@@ -106,8 +106,13 @@ Hier kannst du dir unsere Top-Rezensionen ansehen!
         </script>
         <script>
             function showHome() {
-                
-            }
+                var HomeSection = document.querySelector(".home");
+                HomeSection.style.display = "flex";
+                var RezensionenSection = document.querySelector(".rezensionen");
+                RezensionenSection.style.display = "none";
+                var BestellenSection = document.querySelector(".bestellen");
+                BestellenSection.style.display = "none";
+              }
 
             function showRezensionen() {
                 var HomeSection = document.querySelector(".home");
@@ -117,6 +122,14 @@ Hier kannst du dir unsere Top-Rezensionen ansehen!
                 var BestellenSection = document.querySelector(".bestellen");
                 BestellenSection.style.display = "none";
             }
+            function showBestellen() {
+                var HomeSection = document.querySelector(".home");
+                HomeSection.style.display = "none";
+                var RezensionenSection = document.querySelector(".rezensionen");
+                RezensionenSection.style.display = "none";
+                var BestellenSection = document.querySelector(".bestellen");
+                BestellenSection.style.display = "flex";
+                }
         </script>
 </body>
 
