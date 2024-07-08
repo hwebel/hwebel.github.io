@@ -44,7 +44,7 @@
         }
 
         button:hover {
-            color: aqua;
+            color: black;
         }
 
         .navi {
@@ -94,11 +94,12 @@
             </div>
         </section>
         <section class="rezensionen">
-Hier kannst du dir unsere Top-Rezensionen ansehen!
+            Hier kannst du dir unsere Top-Rezensionen ansehen!
         </section>
-<section class="bestellen">
-    <button>Jetzt bestellen!</button>
-</section>
+        <section class="bestellen">
+            <h1>Hier kannst du den Multihahn kaufen!</h1>
+            <button onclick="zeigeMeldung()">Jetzt bestellen!</button>
+        </section>
 
 
         <script>
@@ -112,7 +113,7 @@ Hier kannst du dir unsere Top-Rezensionen ansehen!
                 RezensionenSection.style.display = "none";
                 var BestellenSection = document.querySelector(".bestellen");
                 BestellenSection.style.display = "none";
-              }
+            }
 
             function showRezensionen() {
                 var HomeSection = document.querySelector(".home");
@@ -129,7 +130,10 @@ Hier kannst du dir unsere Top-Rezensionen ansehen!
                 RezensionenSection.style.display = "none";
                 var BestellenSection = document.querySelector(".bestellen");
                 BestellenSection.style.display = "flex";
-                }
+            }
+            function zeigeMeldung() {
+                alert("Hiermit bestätigen sie,dass der Multihahn ihnen gehört und dass die ausliegende Rechnung über 1500€ automatisch von ihrem Konto abgehoben wird. Vielen Dank für ihre Bestellung!")
+            }
         </script>
 </body>
 
