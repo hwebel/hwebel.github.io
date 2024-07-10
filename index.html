@@ -44,18 +44,70 @@
         }
 
         button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            font-family: "Patua One", serif;
-            font-weight: 400;
-            font-style: normal;
-            color: midnightblue;
+            display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
         }
+        .button-primary {
+  background-color: #3498db;
+  color: white;
+}
 
-        button:hover {
-            color: rgb(131, 126, 238);
-        }
+
+.button-primary:hover {
+  background-color: #2980b9;
+}
+.button-secondary {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: #27ae60;
+}
+.button-warning {
+  background-color: #f1c40f;
+  color: white;
+}
+.button-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.button-danger:hover {
+  background-color: #c0392b;
+}
+.button-disabled {
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+.button-large {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+.button-small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.button-outline {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.button-outline:hover {
+  background-color: #3498db;
+  color: white;
+}
+
 
         .navi {
             background-color: #ffffff;
