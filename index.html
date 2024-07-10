@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,22 +9,17 @@
     <style>
         .home {
             display: flex;
-
         }
-
         .leftcontainer {
             padding-left: 100px;
             padding-right: 100px;
         }
-
         .rezensionen {
             display: none;
         }
-
         .bestellen {
             display: none;
         }
-
         h1 {
             font-size: 20px;
             color: #272635;
@@ -34,7 +28,6 @@
             font-size: 15px;
             color: black;
         }
-
         body {
             background-color: #AEECEF;
             margin: 0px;
@@ -42,45 +35,18 @@
             font-weight: 400;
             font-style: normal;
         }
-
-        .button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-
-.button-default {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.button-default:hover {
-  background-color: #45a049;
-}
-
-
-.button-blue {
-
-
-
-.button-gray {
-  background-color: #e7e7e7;
-  color: black;
-}
-
-.button-gray:hover {
-  background-color: #f60909;
-}
-
-
+        button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            font-family: "Patua One", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: midnightblue;
+        }
+        button:hover {
+            color: rgb(131, 126, 238);
+        }
 
         .navi {
             background-color: #ffffff;
@@ -92,9 +58,7 @@
             border-bottom: 0px solid #A6A6A8;
             display: flex;
             justify-content: space-between;
-            visibility: visible;
         }
-
         .content {
             padding: 10px;
             margin: 0px;
@@ -102,14 +66,12 @@
         }
     </style>
 </head>
-
-
 <body>
     <div class="navi">
         <div class="buttoncontainer">
-            <button class="button button-default" onclick="showHome()">Über den Multihahn</button>
-            <button class="button button-blue" onclick="showRezensionen()">Rezensionen</button>
-            <button class="button button-gray" onclick="showBestellen()">Bestellen</button>
+            <button onclick="showHome()">Über den Multihahn</button>
+            <button onclick="showRezensionen()">Rezensionen</button>
+            <button onclick="showBestellen()">Bestellen</button>
         </div>
     </div>
     <div class="content">
@@ -128,29 +90,23 @@
                 Knopfdruck ausgeben – klingt unglaublich, oder? Doch genau das bietet der Multihahn!
                 <br>
                 <br>
-
                 Egal ob spritziges Mineralwasser, fruchtige Säfte oder sogar Ihr Lieblingssoftdrink – der Multihahn
                 macht es möglich. Mit einem einfachen Dreh können Sie sich jederzeit Ihr Wunschgetränk zapfen, ohne Ihr
                 Zuhause verlassen zu müssen. Dieser innovative Getränkespender ist nicht nur praktisch, sondern auch ein
                 echter Hingucker in jeder Küche.
                 <br>
                 <br>
-
                 Lassen Sie sich von der modernen Technik und dem ansprechenden Design des Multihahns begeistern. Nie war
                 es einfacher, immer das perfekte Getränk parat zu haben. Wenn Sie neugierig geworden sind und sich
                 diesen einzigartigen Komfort in Ihr Zuhause holen möchten, sind Sie hier genau richtig–der Multihahn wird auch Sie überzeugen!
                 <br>
                 <br>
                 <main>
-
                     <center> <img src="Bilder/Hahn.png" width="800" height="350" alt="hahn"></center>
-
                 </main>
             </div>
-
         </section>
         <section class="rezensionen">
-
             Anna S. (32 Jahre, Mutter von zwei Kindern)
             <br>
             ⭐⭐⭐⭐⭐
@@ -220,15 +176,12 @@
             aussuchen, ohne dass ich ständig gefragt werde. Besonders praktisch finde ich die Einstellungsmöglichkeiten
             für kalte und heiße Getränke. So kann ich morgens meinen Kaffee genießen, während die Kinder ihren Saft
             trinken. Einfach klasse!"
-
         </section>
         <section class="bestellen">
             <h1> Hier kannst du den Multihahn kaufen! Klicke nur auf:</h1>
             <button onclick="zeigeMeldung()">Jetzt bestellen!</button>
             <br>
         </section>
-
-
         <script>
             confirm("Bitte akzeptiere die Cookies🍪")
         </script>
@@ -241,7 +194,6 @@
                 var BestellenSection = document.querySelector(".bestellen");
                 BestellenSection.style.display = "none";
             }
-
             function showRezensionen() {
                 var HomeSection = document.querySelector(".home");
                 HomeSection.style.display = "none";
@@ -263,5 +215,4 @@
             }
         </script>
 </body>
-
 </html>
